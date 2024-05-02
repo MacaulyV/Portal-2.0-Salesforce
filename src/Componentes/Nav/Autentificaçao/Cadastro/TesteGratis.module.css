@@ -1,0 +1,63 @@
+.TesteGratis {
+  color: #ffffff;
+  font-family: "Be Vietnam Pro-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute; /* Alterado para posição absoluta */
+  left: 85%; /* Ajuste conforme necessário */
+  top: 35%; /* Ajuste conforme necessário */
+  padding: 14px 20px;
+  border: 1px solid;
+  border-color: #00d9ff;
+  border-radius: 15px;
+  background-color: rgb(0, 89, 255);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  z-index: 2; /* Para garantir que o texto esteja à frente */
+}
+
+.TesteGratis::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent; /* Transparente fora do hover */
+  z-index: 1; /* Menor z-index para não cobrir o texto */
+  border-radius: 15px; /* Borda arredondada igual à do botão */
+}
+
+
+
+
+@keyframes animatedGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.TesteGratis:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.625px #0ef, 0 0 1.25px #0ef, 0 0 2.5px #0ef, 0 0 5px #0ef,
+  0 0 10px #0ef;
+}
+
+.TesteGratis:hover::before {
+  background: linear-gradient(270deg, #00d9ff, #4c00ff, #0084ff, #4c00ff);
+  background-size: 200% 200%;
+  animation: animatedGradient 3s linear infinite;
+  z-index: 1; /* Mantenha o z-index menor para o texto permanecer à frente */
+}
+
+.Texto {
+  position: relative;
+  z-index: 2; /* Para garantir que o texto esteja à frente */
+}

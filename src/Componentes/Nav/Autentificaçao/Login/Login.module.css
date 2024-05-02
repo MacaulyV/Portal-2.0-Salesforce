@@ -1,0 +1,20 @@
+.boneco {
+  transform: translateY(-350%);
+  margin-top: 1.0%;
+  margin-left: 79%;
+  padding: 0.7%;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid;
+  border-color: #ffffff;
+  fill: #ffffff; /* Cor do ícone */
+  transition: background-color 1.5s ease;
+} 
+
+.boneco:hover {
+  transform: translateY(-350%) scale(1.1);
+  background: radial-gradient(circle, #0091ff, #4c00ff, #0084ff, #4c00ff);  
+  border-color: #ffffff;
+  box-shadow: 0 0 0.625px #0ef, 0 0 1.25px #0ef, 0 0 2.5px #0ef, 0 0 5px #0ef,
+  0 0 10px #0ef;
+}

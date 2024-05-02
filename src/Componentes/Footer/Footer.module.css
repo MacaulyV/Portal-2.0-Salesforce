@@ -1,0 +1,86 @@
+.Background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 0%,
+    rgb(14.27, 19.61, 27.63) 0.01%,
+    rgb(42.08, 109.4, 210.37) 100%
+  );
+  color: white;
+  box-sizing: border-box;
+  margin-left: -0.4%;
+  margin-bottom: 1.2%;
+  height: 225%; /* Adicione essa linha para preencher todo o espaço do pai */
+  background-image: url("/Imagens/Home/Footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Para cobrir todo o espaço */
+}
+
+.Content {
+  position: relative;
+  margin-left: 20%;
+  transform: translateY(
+    90px
+  ); /* Use a propriedade transform para mover o conteúdo para baixo */
+}
+
+.Idioma {
+  display: flex;
+  gap: 4.0%;
+  margin-left: -15%;
+  position: absolute; /* Adicione position: absolute; para posicionar a classe .Idioma */
+  top: -30px;
+  width: 16%;
+}
+
+.TextIdioma {
+  color: #ffffff;
+  font-family: "Segoe UI-Bold", Helvetica;
+  font-size: 1.2em;
+  font-weight: 700;
+  height: 18px;
+  text-align: center;
+}
+
+.TextIdioma:hover {
+  color: aqua;
+}
+
+.Links {
+  display: flex;
+  gap: 10px; /* Ajuste a largura da lacuna conforme necessário */
+}
+
+.Link {
+  color: #ffffff;
+  font-family: "Segoe UI-Regular", Helvetica;
+  font-size: 1.05em;
+  text-decoration: underline;
+  padding-left: 2%;
+}
+
+.Text {
+  color: #ffffff;
+  font-family: "Segoe UI-Regular", Helvetica;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 22px;
+  width: 70%;
+  margin-left: 2%;
+}
+
+.Seta {
+  margin-top: 10.0%;
+  fill: rgb(255, 255, 255);
+}
+
+.Seta:hover {
+  fill: aqua;
+}

@@ -1,0 +1,19 @@
+.logo {
+  margin-left: 50%;
+  transform: translateY(-110%); /* Ajuste o valor conforme necessário */
+  width: 6%;
+  transition: transform 0.5s ease-in-out;
+ }
+ 
+.logo:hover {
+  transform: translateY(-115%) scale(1.1); /* Aumenta a escala do elemento */
+ }
+ 
+ .checkbox {
+  opacity: 0;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+ }
+ 
+ 

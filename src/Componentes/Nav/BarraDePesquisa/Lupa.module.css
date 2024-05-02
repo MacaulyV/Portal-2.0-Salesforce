@@ -1,0 +1,45 @@
+.Lupa {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgb(1.33, 22.05, 53.12) 0%,
+    rgb(8.26, 44.59, 99.08) 69.5%
+  );
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-color: #e9f8f4;
+  border-radius: 20%;
+  padding: 0.6%;
+  width: 1.4%;
+  margin-left: 59%;
+  transform: translateY(-227%);
+  transition: transform 0.5s ease-in-out, padding-left 0.5s ease-in-out;
+}
+
+.Lupa:hover {
+  transform: translateY(-227%);
+  padding-left: 14.6%; /* Ajuste o valor conforme necessário */
+  border-radius: 15px;
+}
+
+.searchBar {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  width: 75%; /* Ajuste conforme necessário */
+  padding: 10px;
+  border: none; /* Remove a borda */
+  border-radius: 5px;
+  background: linear-gradient(
+     180deg,
+     rgb(1.33, 22.05, 53.12) 0%,
+     rgb(8.26, 44.59, 99.08) 69.5%
+  );
+  outline: none; /* Remove o outline no foco */
+  color: #ffffff; /* Cor do texto */
+ }
+ 
+ 
+
+

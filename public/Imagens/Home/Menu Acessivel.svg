@@ -1,0 +1,25 @@
+<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="20" r="20" fill="black"/>
+<g clip-path="url(#clip0_917_783)">
+<path d="M22 15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17C19.4696 17 18.9609 16.7893 18.5858 16.4142C18.2107 16.0391 18 15.5304 18 15C18 14.4696 18.2107 13.9609 18.5858 13.5858C18.9609 13.2107 19.4696 13 20 13C20.5304 13 21.0391 13.2107 21.4142 13.5858C21.7893 13.9609 22 14.4696 22 15Z" stroke="url(#paint0_diamond_917_783)" stroke-width="1.5"/>
+<path d="M26 18C26 18 22.463 19.5 20 19.5C17.537 19.5 14 18 14 18M20 20V21.452M20 21.452C19.9997 22.0275 20.165 22.5908 20.476 23.075L23 27M20 21.452C20.0003 22.0275 19.835 22.5908 19.524 23.075L17 27" stroke="url(#paint1_diamond_917_783)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M15 11.338C16.5195 10.4589 18.2445 9.99731 20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C14.477 30 10 25.523 10 20C10 18.179 10.487 16.47 11.338 15" stroke="url(#paint2_diamond_917_783)" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+<defs>
+<radialGradient id="paint0_diamond_917_783" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 15) rotate(90) scale(2)">
+<stop stop-color="#1B6B98"/>
+<stop offset="1" stop-color="#2199DD"/>
+</radialGradient>
+<radialGradient id="paint1_diamond_917_783" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 22.5) rotate(90) scale(4.5 6)">
+<stop stop-color="#1B6B98"/>
+<stop offset="1" stop-color="#2199DD"/>
+</radialGradient>
+<radialGradient id="paint2_diamond_917_783" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 20) rotate(90) scale(10 10)">
+<stop stop-color="#1B6B98"/>
+<stop offset="1" stop-color="#2199DD"/>
+</radialGradient>
+<clipPath id="clip0_917_783">
+<rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+</clipPath>
+</defs>
+</svg>
