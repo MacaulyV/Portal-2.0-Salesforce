@@ -10,7 +10,7 @@ import TesteGratis from "@/Componentes/Nav/Autentificaçao/Cadastro/TesteGratis"
 import Lupa from "@/Componentes/Nav/BarraDePesquisa/Lupa";
 import Contato from "@/Componentes/Tecnologias/ContactForm/Contato";
 import VLibras from "@djpfs/react-vlibras";
-import TextToSpeech from "@/Componentes/Tecnologias/AudioDescriç╞o/TextToSpeech";
+import TextToSpeech from "@/Componentes/Tecnologias/AudioDescrição/TextToSpeech";
 import SectionCapa from "@/Componentes/SectionsHome/SectionCapa/SectionCapa";
 import KommunicateChat from "@/Componentes/Tecnologias/Chatbot/chat";
 import SectionNovidades from "@/Componentes/SectionsHome/SectionCRM/SectionCRM";
@@ -58,6 +58,7 @@ const Home = () => {
       <article className={styles.Home} style={{ flex: 1 }}>
         <div className={styles.CapaInicial}>
           <SectionCapa />
+          <TextToSpeech />
         </div>
         <div className="Contato">
           <Contato />
@@ -67,9 +68,6 @@ const Home = () => {
         </div>
         <div className="V-Libras">
           <VLibras forceOnload={true} />
-        </div>
-        <div className={styles.AudioDescrição}>
-          <TextToSpeech />
         </div>
         <div className={styles.SectionCRM}>
           <SectioncCRM />

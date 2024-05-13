@@ -12,49 +12,60 @@
 
 .Texto {
   color: #ffffff;
-  transform: translateY(175%);
+  transform: translateY(165%);
   margin-left: 42%;
   text-align: center;
   font-family: "Be Vietnam Pro-Bold", Helvetica;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 600;
   width: 0; /* Começa com largura zero */
   overflow: hidden; /* Esconde o texto enquanto estiver com largura zero */
   white-space: nowrap; /* Evita quebras de linha */
-  animation: expandText 3s forwards, pulseText 5s infinite ease-in-out, fadeIn 2s forwards; /* Aplica as animações */
-}
-
-@keyframes expandText {
-  0% {
-    width: 0; /* Começa com largura zero */
+  animation: expandText 3s forwards, pulseText 5s infinite ease-in-out, fadeIn 2s forwards, tracking-in-expand 3s forwards; /* Aplica as animações */
+ }
+ 
+ @keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
   }
-  50% {
-    width: auto; /* Atinge a largura normal do texto */
+   40% {
+     opacity: 0.6;
   }
-  100% {
-    width: auto; /* Atinge a largura normal do texto */
+   100% {
+     opacity: 1;
   }
-}
-
-@keyframes pulseText {
-  0% {
-    color: #ffffff; /* Cor inicial */
+ }
+ 
+ @keyframes expandText {
+   0% {
+     width: 0; /* Começa com largura zero */
   }
-  100% {
-    color:#0ef /* Cor final */
+   50% {
+     width: auto; /* Atinge a largura normal do texto */
   }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; /* Começa com opacidade zero */
+   100% {
+     width: auto; /* Atinge a largura normal do texto */
   }
-  100% {
-    opacity: 1; /* Atinge a opacidade total */
+ }
+ 
+ @keyframes pulseText {
+   0% {
+     color: #ffffff; /* Cor inicial */
   }
-}
-
-
+   100% {
+     color:rgb(0, 255, 255) /* Cor final */
+  }
+ }
+ 
+ @keyframes fadeIn {
+   0% {
+     opacity: 0; /* Começa com opacidade zero */
+  }
+   100% {
+     opacity: 1; /* Atinge a opacidade total */
+  }
+ }
 .ButtonEinstein {
   /* Propriedades de estilo existentes */
   width: 11%;
@@ -252,11 +263,4 @@
   width: 59%;
   z-index: -0;
   position: relative;
-  .FundoImg {
-    transform: translateY(-50%);
-    padding-bottom: 3.6%;
-    margin-top: -34%;
-    z-index: -0;
-    position: relative;
-  }
 }

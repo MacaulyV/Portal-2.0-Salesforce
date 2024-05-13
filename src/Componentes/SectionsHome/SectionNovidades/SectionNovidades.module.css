@@ -48,7 +48,7 @@
 .Card2:hover,
 .Card3:hover,
 .Card4:hover {
-  box-shadow: 0 0 50px rgb(174, 0, 255);
+  box-shadow: 0 0 50px rgb(85, 0, 255);
 }
 
 
@@ -155,7 +155,7 @@
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(4, 2, 112) 0%,
-    rgb(61, 33, 221) 100%
+    rgb(85, 0, 255) 100%
   );
   border-radius: 12px;
   transition: background-color 0.5s ease;

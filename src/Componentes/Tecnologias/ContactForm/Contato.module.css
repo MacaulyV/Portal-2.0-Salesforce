@@ -22,7 +22,7 @@
 .BottomContato:hover {
   background-color: #0026ff;
   transform: translateX(-50%) scale(1.1);
-  outline: 2px solid #9f0eff;
+  outline: 2px solid #8000ff;
 }
 
 .TituloFormulario {
@@ -36,8 +36,9 @@
   -webkit-background-clip: text;
   animation: Gradient 5s ease infinite;
   line-height: 1.4;
-  margin-top: 10%;
+  margin-top: 0%;
   width: 130%;
+  font-family: SF Pro Display;
   margin-left: -14.5%;
   transform: translateY(40%);
 }
@@ -72,12 +73,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 15%;
   margin-left: 77.0%;
-  margin-top: -33.0%;
-  border: solid 4px;
+  transform: translateY(-218%);
+  border: solid 3px;
   border-color: #4c00ff;
   z-index: 10;
   position: relative;
   border-radius: 5%;
+  position: fixed;
 }
 
 .Campo {

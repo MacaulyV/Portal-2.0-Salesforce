@@ -15,6 +15,11 @@
     "static/chunks/main-app.js"
   ],
   "pages": {
+    "/Cadastro": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Cadastro.js"
+    ],
     "/Login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

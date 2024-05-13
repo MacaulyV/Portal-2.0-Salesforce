@@ -1,0 +1,345 @@
+.CadastroContainer {
+  display: flex;
+  justify-content: center;
+  height: 99.3vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.Capa {
+  filter: brightness(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.Informações {
+  margin-left: 10%;
+}
+
+.LogoTitulo {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  margin-top: -2%;
+  margin-left: 5%;
+}
+
+.Logo {
+  width: 15%;
+  margin-top: -2%;
+  transform: translateX(10%);
+}
+
+.Titulo {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-weight: 500;
+  font-size: 3.0em;
+  word-wrap: break-word;
+  width: 58%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.Subtitulo {
+  margin-top: -1%;
+  color: rgb(0, 0, 0);
+  font-size: 1.5m;
+  font-family: SF Pro Display;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin-left: 7%;
+}
+
+.TextBenef::before {
+  content: "•"; /* Caractere para a mini bolinha */
+  margin-right: 3.2%; /* Espaçamento entre a mini bolinha e o texto */
+  color: #000000;
+}
+
+.Duvidas {
+  border-radius: 50px;
+  background-color: #000000c6;
+  padding-left: 1%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  width: 64%;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-family: SF Pro Display;
+  font-weight: 200;
+  word-wrap: break-word;
+  margin-left: 7%;
+}
+
+.Negrito {
+  color: rgb(0, 255, 102);
+  font-size: 1.1em;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-left: -5%;
+  padding-right: 0.5%;
+  padding-left: 5%;
+}
+
+.Beneficios {
+  font-family: SF Pro Display;
+  border-radius: 25px;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.455);
+  width: 63%;
+  font-weight: 200;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  margin-left: 6.5%;
+}
+
+.img {
+  border-radius: 100px;
+  width: 60%;
+  margin-left: 9%;
+}
+
+/* Formulario */
+
+.Formulario{
+  margin-right: 10%;
+  position: relative;
+  width: 32.8%;
+  height: 88%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #070049f1 70%);
+  box-shadow: 0 0 50px rgb(132, 0, 255);
+  border-radius: 25px;
+  padding: 40px;
+  overflow: hidden;
+  margin-top: 1.5%;
+}
+
+.title {
+  font-family: SF Pro Display;
+  font-size: 1.8em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.titleSub{
+  font-family: SF Pro Display;
+  font-size: 1.07em;
+  color: #00aeff;
+  width: 105%;
+}
+
+.inputGroup {
+  position: relative;
+  margin: 25px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Adicione isso ao seu arquivo Cadastro.module.css */
+
+.inputSelect {
+  position: relative;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 20px; /* Ajuste a altura conforme necessário */
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none; /* Para remover o estilo padrão do select */
+  cursor: pointer;
+  margin-top: -5%;
+  transform: translateY(63%);
+  font-family: SF Pro Display;
+}
+
+.inputSelect:focus +.inputGroupLabel,
+.inputSelect:valid +.inputGroupLabel {
+  top: -4px;
+}
+
+.inputGroupLabel {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 0.95em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.inputGroupLabel:focus {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+/* Adicione uma classe para o placeholder */
+.inputSelect option:first-child {
+  display: none; /* Esconde a primeira opção que é o placeholder */
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 0.95em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.inputGroup input:focus + label {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+.inputGroup input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: rgb(255, 0, 242);
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  top: -4px;
+}
+
+.TituloEmpresa{
+z-index: 2;
+}
+
+.remember {
+  margin-bottom: 5%;
+}
+
+.remember label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Termos{
+  color: white;
+  margin-left: 1%;
+}
+.Termos2{
+  font-size: 0.9em;
+  font-family: 'SF Pro Display', sans-serif;
+  color: #00aeff;
+  margin-left: 1%;
+}
+
+.remember label input[type="checkbox"] {
+  display: none;
+}
+
+.remember label .checkbox {
+  position: relative;
+  width: 12\px; /* Largura da caixa */
+  height: 12px; /* Altura da caixa */
+  border: 2px solid #00eeff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox {
+  background-color: #0ef;
+}
+
+.remember label .checkbox:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox:after {
+  display: block;
+}
+
+.remember label .checkbox:after {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -1px; /* Ajusta a posição verticalmente */
+  margin-left: -1px; /* Ajusta a posição horizontalmente */
+}
+
+.remember label .label {
+  color: #00eeff;
+  font-size: 0.9em;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.TextFinal{
+  color: #ffffff;
+}
+
+.TesteGratuitamente{
+  margin-left: 5%;
+  position: relative;
+  display: inline-block;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #5500ff;
+  padding: 10px 30px;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s, box-shadow 1s;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(98, 0, 255) 0%, #2a006c 50%);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, #2a006c 100%);
+  border-radius: 10px;
+  margin-top: 3%;
+}
+
+.TesteGratuitamente:hover {
+  transform: scale(1.05);
+  transition-delay: 0s, 1s;
+  color: #fff;
+  box-shadow: 0 0 2.5px #6200ff, 0 0 5px #6200ff, 0 0 10px #6200ff, 0 0 20px #6200ff,
+  0 0 40px #6200ff;
+}
+
+.TesteGratuitamente::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(98, 0, 255) 0%, #2a006c 50%);
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: 1s;
+}
+
+.TesteGratuitamente:hover:before {
+  width: 76.0%;
+}

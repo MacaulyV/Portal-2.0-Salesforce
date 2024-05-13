@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Login.module.css";
-import Link from 'next/link';
+import Link from "next/link";
 
 const ComponenteLogin = () => {
   return (

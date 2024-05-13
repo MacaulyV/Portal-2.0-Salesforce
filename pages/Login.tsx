@@ -1,12 +1,18 @@
-// Login.tsx
 import React, { useState } from "react";
 import styles from "./Login.module.css"; // Importando as classes do arquivo CSS Module
 import { motion } from "framer-motion";
 import KommunicateChat from "@/Componentes/Tecnologias/Chatbot/chat";
+import Link from "next/link";
 
 const Login = () => {
   const [focusedInput, setFocusedInput] = useState<string | null>(null);
   const [receberNotificacoes, setReceberNotificacoes] = useState(false);
+
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = () => {
+    setIsChecked(!isChecked);
+  };
 
   const handleInputFocus = (inputId: string) => {
     setFocusedInput(inputId);
@@ -37,16 +43,46 @@ const Login = () => {
     console.log("Password:", password);
   };
 
+  const [currentImage, setCurrentImage] = useState("DarkMode1.svg");
+
+  // Estado para controlar o estado de brilho da imagem de fundo
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Função para alternar a imagem
+  const toggleImage = () => {
+    setCurrentImage(
+      currentImage === "DarkMode1.svg" ? "DarkMode3.svg" : "DarkMode1.svg"
+    );
+  };
+
+  // Função para alternar o estado de brilho
+  const toggleBrightness = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Nova função que combina as duas funções acima
+  const toggleBoth = () => {
+    toggleImage();
+    toggleBrightness();
+  };
+
   return (
     <div className={styles.loginContainer}>
       <video
-        className={styles.Capa}
+        className={`${styles.Capa} ${
+          isDarkMode ? styles.CapaDark : styles.CapaLight
+        }`}
         src="/Videos/Home/Capa.mp4"
         autoPlay
         loop
         muted
       ></video>
-      <div className={styles.contentWrapper}>
+      <motion.div
+        className={styles.contentWrapper}
+        initial={{ scale: 0, rotate: -180, opacity: 0 }} // Começa pequeno, girado e invisível
+        animate={{ scale: 1, rotate: 0, opacity: 1 }} // Anima para tamanho normal, sem rotação e opacidade completa
+        transition={{ type: "spring", duration: 4.0, bounce: 0.3 }} // Transição tipo mola com duração de 1.5 segundos e um pouco de rebote
+      >
         <div className={styles.leftContent}>
           <div className={styles.loginForm}>
             <h1 className={styles.Titulo}>
@@ -73,7 +109,7 @@ const Login = () => {
                 confiança.
               </span>
             </p>
-            <button className={styles.Button}>Inscreva-se agora</button>
+            <button className={styles.Button1}>Inscreva-se agora</button>
             <br />
             <img
               className={styles.img}
@@ -94,38 +130,54 @@ const Login = () => {
           <div className={styles.wrapper}>
             <div className={`${styles.formWrapper} ${styles.signIn}`}>
               <form onSubmit={handleSubmit}>
-                <h2 className={styles.title}>Fazer login</h2>
-                <div className={styles.inputGroup}>
-                  <input type="text" required className={styles.input} />
-                  <label htmlFor="">Nome do usuário</label>
+                <div className={styles.TituloDarkMode}>
+                  <h2 className={styles.title}>Fazer login</h2>
+                  <img
+                    className={styles.DarkMode}
+                    src={`/Imagens/Home/${currentImage}`}
+                    alt="Imagem"
+                    onClick={toggleBoth} // Adiciona o evento de clique
+                  />
                 </div>
-                <div className={styles.inputGroup}>
-                  <input type="password" required className={styles.input} />
-                  <label htmlFor="">Senha</label>
-                </div>
-                <div className={styles.remember}>
-                  <label>
-                    <input type="checkbox" /> Lembrar-me
-                  </label>
-                </div>
-                <button type="submit" className={styles.button}>
-                  Entrar
-                </button>{" "}
-                <br />
-                <br />
-                <div className={styles.Opções}>
-                  <a className={styles.RenomearSenha} href="">
-                    Esqueceu sua senha?
-                  </a>
-                  <a className={styles.RenomearSenha} href="">
-                    Usar domínio personalizado
-                  </a>
-                </div>
-                <div className={styles.signUpLink}>
-                  <p>Não é cliente? </p>
-                </div>
-                <div className={styles.TesteGratuitamente}>
-                  <button>Teste gratuitamente</button>
+                <div className={styles.Restante}>
+                  <div className={styles.inputGroup}>
+                    <input type="text" required className={styles.input} />
+                    <label htmlFor="">Nome do usuário</label>
+                  </div>
+                  <div className={styles.inputGroup}>
+                    <input type="password" required className={styles.input} />
+                    <label htmlFor="">Senha</label>
+                  </div>
+                  <div className={styles.remember}>
+                    <label className={isChecked ? styles.checked : ""}>
+                      <input
+                        type="checkbox"
+                        checked={isChecked}
+                        onChange={handleChange}
+                      />
+                      <span className={styles.checkbox}></span>
+                      <span className={styles.label}>Lembrar-me</span>
+                    </label>
+                  </div>
+                  <button className={styles.button}>Entrar</button>
+                  <br />
+                  <br />
+                  <div className={styles.Opções}>
+                    <a className={styles.RenomearSenha} href="">
+                      Esqueceu sua senha?
+                    </a>
+                    <a className={styles.RenomearSenha} href="">
+                      Usar domínio personalizado
+                    </a>
+                  </div>
+                  <div className={styles.signUpLink}>
+                    <p>Não é cliente? </p>
+                  </div>
+                  <Link href="/Cadastro">
+                    <div className={styles.TesteGratuitamente}>
+                      <button>Teste gratuitamente</button>
+                    </div>
+                  </Link>
                 </div>
               </form>
             </div>
@@ -134,7 +186,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

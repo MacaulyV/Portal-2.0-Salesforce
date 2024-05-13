@@ -1,12 +1,33 @@
-// Importação do React e bibliotecas necessárias
-import React from "react";
 import { motion } from "framer-motion";
 import styles from "./SectionCapa.module.css";
+import React, { useEffect, useRef } from "react";
 
 const SectionCapa = () => {
+  const sectionRef = useRef<HTMLDivElement>(null); // Explicitly type sectionRef
+
+  useEffect(() => {
+    const checkScroll = () => {
+      if (sectionRef.current) {
+        const { scrollWidth, clientWidth } = sectionRef.current;
+        if (scrollWidth > clientWidth) {
+          sectionRef.current.style.overflowX = 'hidden';
+        } else {
+          sectionRef.current.style.overflowX = 'auto';
+        }
+      }
+    };
+
+    window.addEventListener('resize', checkScroll);
+    checkScroll();
+
+    return () => {
+      window.removeEventListener('resize', checkScroll);
+    };
+  }, []);
+
   return (
     <div className={styles.SectionCapa}>
-      <section className={styles.Capa}>
+      <section ref={sectionRef} className={styles.Capa}>
         {/* Conteúdo da Seção Capa */}
         <div className={styles.Destaque}>
           <p className={styles.Texto}>inteligência em cada decisão</p>

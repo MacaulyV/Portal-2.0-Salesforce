@@ -32,7 +32,15 @@
 }
 
 .page_SectionNovidades__aLCrh {
-margin-top: 10%;
+  margin-top: 10%!important;
+}
+
+.page_SectionCRM__ww5hU {
+  margin-top: -35%!important; 
+}
+
+.page_AudioDescri__o__cBQpj{
+
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/Nav/Navegaçao/Produto/LinkProduto.module.css ***!
@@ -194,6 +202,10 @@ margin-top: 10%;
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/Nav/Autentificaçao/Login/Login.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+.Login_componenteLogin__dxJr_{
+  margin-top: 2.9%;
+}
+
 .Login_boneco__RtmP9 {
   transform: translateY(-350%);
   margin-top: 1.0%;
@@ -284,8 +296,11 @@ margin-top: 10%;
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/Nav/BarraDePesquisa/Lupa.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/* Lupa.module.css */
 .Lupa_Lupa__bABtm {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: linear-gradient(
     180deg,
     rgb(1.33, 22.05, 53.12) 0%,
@@ -298,37 +313,42 @@ margin-top: 10%;
   padding: 0.6%;
   width: 1.4%;
   margin-left: 59%;
-  transform: translateY(-227%);
+  margin-top: 1.7%;
+  transform: translateY(0%);
   transition: transform 0.5s ease-in-out, padding-left 0.5s ease-in-out;
 }
 
 .Lupa_Lupa__bABtm:hover {
-  transform: translateY(-227%);
+  transform: translateY(0%);
   padding-left: 14.6%; /* Ajuste o valor conforme necessário */
   border-radius: 15px;
+  height: 30px;
+  color: #9900ff;
 }
 
-.Lupa_searchBar__FrLxI {
-  position: absolute;
-  top: 50%;
-  left: 43%;
-  transform: translate(-50%, -50%);
-  width: 75%; /* Ajuste conforme necessário */
-  padding: 10px;
+/* Estilos para o campo de entrada */
+.Lupa_Lupa__bABtm input[type="text"] {
+  width: 900%; /* Ajuste conforme necessário para centralizar */
+  padding: 10px; /* Espaçamento interno */
+  outline: none; /* Remove o contorno ao focar */
   border: none; /* Remove a borda */
-  border-radius: 5px;
+  border-radius: 55px; /* Arredonda os cantos */
   background: linear-gradient(
-     180deg,
-     rgb(1.33, 22.05, 53.12) 0%,
-     rgb(8.26, 44.59, 99.08) 69.5%
+    180deg,
+    rgb(1.33, 22.05, 53.12) 0%,
+    rgb(8.26, 44.59, 99.08) 69.5%
   );
-  outline: none; /* Remove o outline no foco */
-  color: #ffffff; /* Cor do texto */
- }
- 
- 
+  font-family: "SF Pro Display", sans-serif;
+  margin-left: -1000%;
+  transform: translateY(-85%);
+  font-size: 1em;
+  color: #00d9ff;
+}
 
-
+.Lupa_lupaImage__HaCZq {
+  margin-left: 2%;
+  margin-top: 2%;
+}
 
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/Tecnologias/ContactForm/Contato.module.css ***!
@@ -357,7 +377,7 @@ margin-top: 10%;
 .Contato_BottomContato___WmMm:hover {
   background-color: #0026ff;
   transform: translateX(-50%) scale(1.1);
-  outline: 2px solid #9f0eff;
+  outline: 2px solid #8000ff;
 }
 
 .Contato_TituloFormulario__1qlb_ {
@@ -371,8 +391,9 @@ margin-top: 10%;
   -webkit-background-clip: text;
   animation: Contato_Gradient__QGVwR 5s ease infinite;
   line-height: 1.4;
-  margin-top: 10%;
+  margin-top: 0%;
   width: 130%;
+  font-family: SF Pro Display;
   margin-left: -14.5%;
   transform: translateY(40%);
 }
@@ -407,12 +428,13 @@ margin-top: 10%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 15%;
   margin-left: 77.0%;
-  margin-top: -33.0%;
-  border: solid 4px;
+  transform: translateY(-218%);
+  border: solid 3px;
   border-color: #4c00ff;
   z-index: 10;
   position: relative;
   border-radius: 5%;
+  position: fixed;
 }
 
 .Contato_Campo__SGaJl {
@@ -501,6 +523,191 @@ margin-top: 10%;
   border-color: #00d9ff;
 }
 
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/Tecnologias/AudioDescrição/TextToSpeech.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TextToSpeech_MenuLateral__VAOZ0 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 350%;
+  height: 90%;
+  margin-left: -400%;
+  margin-top: 5%;
+  background-color: #4800ff;
+  border: solid 1px #008cff;
+  transition: all 0.3s ease;
+  gap: 2%;
+  cursor: pointer;
+}
+
+.TextToSpeech_IconLateral__zaYWZ {
+  width: 38%;
+  margin-left: -5%;
+  cursor: pointer;
+}
+
+.TextToSpeech_TItleDivLateral__Oznpc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.TextToSpeech_TitleMaior__p5l0R {
+  font-family: "SF Pro Display", sans-serif;
+  margin-left: -53%;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.TextToSpeech_Button__ACE2I {
+  display: flex;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.1em;
+  font-weight: 200;
+  border-radius: 15px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(4, 2, 112) 0%,
+    rgb(85, 0, 255) 100%
+  );
+  align-items: center;
+  transform: translateY(-1650%);
+  margin-left: 96.5%;
+  z-index: 10;
+  width: 3%;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  border: solid 2px #0044ff;
+}
+
+.TextToSpeech_Button__ACE2I:hover {
+  transform: translateY(-1650%) scale(1);
+}
+
+.TextToSpeech_TextButton__BcSea {
+  margin-left: -18%;
+}
+
+.TextToSpeech_logo__Bwq2A {
+  width: 15%;
+  margin-left: 0%;
+  padding-right: 2%;
+}
+
+.TextToSpeech_Titulo__6Cid9 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: rgb(0, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  padding-right: 2%;
+}
+
+.TextToSpeech_IconVoz__OycjX {
+  width: 140%;
+  margin-left: -40%;
+  cursor: pointer;
+}
+
+.TextToSpeech_IconAudio__5_vyO {
+  width: 20%;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.TextToSpeech_IconFechar__yAV_T {
+  transform: translateX(30%);
+  fill: white;
+  width: 10%;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(30%) scale(1.1);
+    fill: rgb(0, 255, 255);
+  }
+}
+
+.TextToSpeech_IconLeft___N77f {
+  transform: rotate(180);
+}
+
+.TextToSpeech_IconNav__FXC9K,
+.TextToSpeech_IconLeft___N77f {
+  width: 18%;
+  fill: rgb(15, 0, 180);
+  &:hover {
+    transform: scale(1.1);
+    fill: rgb(0, 132, 255);
+  }
+}
+
+.TextToSpeech_IconNav__FXC9K.TextToSpeech_clicado__tby2k {
+  fill: red;
+}
+
+.TextToSpeech_IconPause__CEjJ8 {
+  cursor: pointer;
+  width: 23%;
+  fill: rgb(0, 0, 0);
+  &:hover {
+    transform: scale(1.1);
+    fill: rgb(93, 0, 255);
+  }
+}
+
+/* TextToSpeech.module.css */
+.TextToSpeech_MenuVoz__CE_a8 {
+  box-shadow: 0 0 1.25px #6200ff, 0 0 2.5px #6200ff, 0 0 5px #6200ff,
+    0 0 10px #6200ff, 0 0 20px #6200ff;
+  background-image: url("/Imagens/Home/CapaF2.png/");
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-200%);
+  padding-bottom: 20%;
+  border-radius: 15px;
+  width: 20%;
+  background-color: rgb(53, 0, 160);
+  position: fixed;
+  z-index: 100;
+  margin-left: 76%;
+}
+
+.TextToSpeech_Nav____MVo {
+  display: flex;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(4, 2, 112) 0%,
+    rgb(85, 0, 255) 100%
+  );
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.TextToSpeech_Footer__51P9g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  border-radius: 50px;
+  transform: translateY(600%);
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Componentes/SectionsHome/SectionCapa/SectionCapa.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -518,49 +725,60 @@ margin-top: 10%;
 
 .SectionCapa_Texto__FQoqT {
   color: #ffffff;
-  transform: translateY(175%);
+  transform: translateY(165%);
   margin-left: 42%;
   text-align: center;
   font-family: "Be Vietnam Pro-Bold", Helvetica;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 600;
   width: 0; /* Começa com largura zero */
   overflow: hidden; /* Esconde o texto enquanto estiver com largura zero */
   white-space: nowrap; /* Evita quebras de linha */
-  animation: SectionCapa_expandText__Vd8SX 3s forwards, SectionCapa_pulseText__ttnE_ 5s infinite ease-in-out, SectionCapa_fadeIn__Kc3np 2s forwards; /* Aplica as animações */
-}
-
-@keyframes SectionCapa_expandText__Vd8SX {
-  0% {
-    width: 0; /* Começa com largura zero */
+  animation: SectionCapa_expandText__Vd8SX 3s forwards, SectionCapa_pulseText__ttnE_ 5s infinite ease-in-out, SectionCapa_fadeIn__Kc3np 2s forwards, SectionCapa_tracking-in-expand__AStY4 3s forwards; /* Aplica as animações */
+ }
+ 
+ @keyframes SectionCapa_tracking-in-expand__AStY4 {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
   }
-  50% {
-    width: auto; /* Atinge a largura normal do texto */
+   40% {
+     opacity: 0.6;
   }
-  100% {
-    width: auto; /* Atinge a largura normal do texto */
+   100% {
+     opacity: 1;
   }
-}
-
-@keyframes SectionCapa_pulseText__ttnE_ {
-  0% {
-    color: #ffffff; /* Cor inicial */
+ }
+ 
+ @keyframes SectionCapa_expandText__Vd8SX {
+   0% {
+     width: 0; /* Começa com largura zero */
   }
-  100% {
-    color:#0ef /* Cor final */
+   50% {
+     width: auto; /* Atinge a largura normal do texto */
   }
-}
-
-@keyframes SectionCapa_fadeIn__Kc3np {
-  0% {
-    opacity: 0; /* Começa com opacidade zero */
+   100% {
+     width: auto; /* Atinge a largura normal do texto */
   }
-  100% {
-    opacity: 1; /* Atinge a opacidade total */
+ }
+ 
+ @keyframes SectionCapa_pulseText__ttnE_ {
+   0% {
+     color: #ffffff; /* Cor inicial */
   }
-}
-
-
+   100% {
+     color:rgb(0, 255, 255) /* Cor final */
+  }
+ }
+ 
+ @keyframes SectionCapa_fadeIn__Kc3np {
+   0% {
+     opacity: 0; /* Começa com opacidade zero */
+  }
+   100% {
+     opacity: 1; /* Atinge a opacidade total */
+  }
+ }
 .SectionCapa_ButtonEinstein__P9puo {
   /* Propriedades de estilo existentes */
   width: 11%;
@@ -759,13 +977,6 @@ margin-top: 10%;
   width: 59%;
   z-index: -0;
   position: relative;
-  .SectionCapa_FundoImg__SxCLT {
-    transform: translateY(-50%);
-    padding-bottom: 3.6%;
-    margin-top: -34%;
-    z-index: -0;
-    position: relative;
-  }
 }
 
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -968,7 +1179,7 @@ margin-top: 10%;
 .SectionNovidades_Card2__EaY6I:hover,
 .SectionNovidades_Card3__j3VT1:hover,
 .SectionNovidades_Card4__LiVi0:hover {
-  box-shadow: 0 0 50px rgb(174, 0, 255);
+  box-shadow: 0 0 50px rgb(85, 0, 255);
 }
 
 
@@ -1075,7 +1286,7 @@ margin-top: 10%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(4, 2, 112) 0%,
-    rgb(61, 33, 221) 100%
+    rgb(85, 0, 255) 100%
   );
   border-radius: 12px;
   transition: background-color 0.5s ease;

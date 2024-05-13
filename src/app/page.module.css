@@ -29,5 +29,13 @@
 }
 
 .SectionNovidades {
-margin-top: 10%;
+  margin-top: 10%!important;
+}
+
+.SectionCRM {
+  margin-top: -35%!important; 
+}
+
+.AudioDescrição{
+
 }
