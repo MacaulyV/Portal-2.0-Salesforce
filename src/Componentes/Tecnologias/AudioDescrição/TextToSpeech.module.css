@@ -1,0 +1,180 @@
+.MenuLateral {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 350%;
+  height: 90%;
+  margin-left: -400%;
+  margin-top: 5%;
+  background-color: #4800ff;
+  border: solid 1px #008cff;
+  transition: all 0.3s ease;
+  gap: 2%;
+  cursor: pointer;
+}
+
+.IconLateral {
+  width: 38%;
+  margin-left: -5%;
+  cursor: pointer;
+}
+
+.TItleDivLateral {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.TitleMaior {
+  font-family: "SF Pro Display", sans-serif;
+  margin-left: -53%;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.Button {
+  display: flex;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.1em;
+  font-weight: 200;
+  border-radius: 15px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(4, 2, 112) 0%,
+    rgb(85, 0, 255) 100%
+  );
+  align-items: center;
+  transform: translateY(-1650%);
+  margin-left: 96.5%;
+  z-index: 10;
+  width: 3%;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  border: solid 2px #0044ff;
+}
+
+.Button:hover {
+  transform: translateY(-1650%) scale(1);
+}
+
+.TextButton {
+  margin-left: -18%;
+}
+
+.logo {
+  width: 15%;
+  margin-left: 0%;
+  padding-right: 2%;
+}
+
+.Titulo {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: rgb(0, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  padding-right: 2%;
+}
+
+.IconVoz {
+  width: 140%;
+  margin-left: -40%;
+  cursor: pointer;
+}
+
+.IconAudio {
+  width: 20%;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.IconFechar {
+  transform: translateX(30%);
+  fill: white;
+  width: 10%;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(30%) scale(1.1);
+    fill: rgb(0, 255, 255);
+  }
+}
+
+.IconLeft {
+  transform: rotate(180);
+}
+
+.IconNav,
+.IconLeft {
+  width: 18%;
+  fill: rgb(15, 0, 180);
+  &:hover {
+    transform: scale(1.1);
+    fill: rgb(0, 132, 255);
+  }
+}
+
+.IconNav.clicado {
+  fill: red;
+}
+
+.IconPause {
+  cursor: pointer;
+  width: 23%;
+  fill: rgb(0, 0, 0);
+  &:hover {
+    transform: scale(1.1);
+    fill: rgb(93, 0, 255);
+  }
+}
+
+/* TextToSpeech.module.css */
+.MenuVoz {
+  box-shadow: 0 0 1.25px #6200ff, 0 0 2.5px #6200ff, 0 0 5px #6200ff,
+    0 0 10px #6200ff, 0 0 20px #6200ff;
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-200%);
+  padding-bottom: 20%;
+  border-radius: 15px;
+  width: 20%;
+  background-color: rgb(53, 0, 160);
+  position: fixed;
+  z-index: 100;
+  margin-left: 76%;
+}
+
+.Nav {
+  display: flex;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(4, 2, 112) 0%,
+    rgb(85, 0, 255) 100%
+  );
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  border-radius: 50px;
+  transform: translateY(600%);
+}

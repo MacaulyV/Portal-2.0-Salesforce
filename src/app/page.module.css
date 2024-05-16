@@ -1,0 +1,42 @@
+.Home {
+
+}
+
+.box {
+  display: grid;
+  grid-template-rows: 1 auto;
+  min-height: 100vh;
+}
+
+.box .navbar {
+  height: 10%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
+
+.logo {
+  width: 5%;
+  margin-top: 1.2%;
+  margin-left: 4.5%;
+}
+
+.CapaInicial {
+  margin-bottom: 14.5%;
+}
+
+.SectionNovidades {
+  margin-top: 10% !important;
+}
+
+.SectionCRM {
+  margin-top: -35% !important;
+}
+
+.Fundo{
+  margin-top: -5%;
+  background-color: rgb(0, 0, 0);
+}

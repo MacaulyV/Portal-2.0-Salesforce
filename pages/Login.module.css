@@ -1,0 +1,424 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; /* Defina a largura total */
+}
+
+.Capa {
+  filter: brightness(0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.CapaDark {
+  filter: brightness(0.2);
+}
+
+.CapaLight {
+  filter: brightness(0.9);
+}
+
+.contentWrapper {
+  display: flex;
+  height: 75%;
+  width: 60%; /* Use a largura total do container */
+  max-width: 1500px; /* Defina o tamanho máximo */
+}
+
+.leftContent {
+  width: 50%; /* Defina a largura da coluna esquerda */
+}
+
+.rightContent {
+  width: 50%; /* Defina a largura da coluna direita */
+}
+
+.loginForm {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #070049f1 70%);
+  box-shadow: 0 0 50px rgb(132, 0, 255);
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 50px;
+  height: 100%;
+  overflow: hidden;
+  width: 190%;
+  z-index: 3;
+  border-color: rgb(153, 0, 255);
+}
+
+.Titulo {
+  font-size: 2.2em;
+  font-family: SF Pro Display;
+  font-weight: 200;
+  word-wrap: break-word;
+  width: 50%;
+  font-weight: 500;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 195, 255) 0%,
+    rgb(0, 119, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.SubtituloMaior {
+  color: rgba(0, 247, 255, 0.89);
+  font-size: 1.3em;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 45%;
+}
+
+.Subtitulo::before {
+  content: "•"; /* Caractere para a mini bolinha */
+  margin-right: 3.2%; /* Espaçamento entre a mini bolinha e o texto */
+  color: #00eeff;
+}
+
+.Subtitulo {
+  color: rgba(255, 255, 255, 0.842);
+  margin-left: 4%;
+  display: inline-block; /* Adiciona esta linha */
+  text-indent: -5%;
+  margin-top: 1.5%;
+  transform: translateY(-30%);
+  width: 88%;
+}
+
+.Texto1 {
+  color: rgba(0, 247, 255, 0.89);
+  font-size: 1.2em;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 45%;
+}
+
+.Texto2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-left: 17%;
+  margin-top: 2%;
+  width: 60%;
+  letter-spacing: 1px;
+}
+
+.Button1 {
+  margin-left: 5%;
+  position: relative;
+  display: inline-block;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  color: #0ef;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #0ef;
+  padding: 10px 30px;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s, box-shadow 1s;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(55, 0, 255) 0%, #070049f1 50%);
+  border-radius: 10px;
+}
+
+.Button1:hover {
+  transform: scale(1.05);
+  transition-delay: 0s, 1s;
+  color: #fff;
+  box-shadow: 0 0 2.5px #0ef, 0 0 5px #0ef, 0 0 10px #0ef, 0 0 20px #0ef,
+    0 0 40px #0ef;
+}
+
+.Button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background: #0ef;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: 1s;
+}
+
+.Button1:hover:before {
+  width: 79.5%;
+}
+
+.img {
+  margin-left: 2%;
+  transform: translateY(8%);
+  width: 42%;
+}
+
+.Logo {
+  width: 22%;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.wrapper {
+  position: relative;
+  width: 70%;
+  height: 60%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #070049f1 70%);
+  box-shadow: 0 0 50px rgb(132, 0, 255);
+  border-radius: 50px;
+  padding: 40px;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  transition: 1s ease-in-out;
+}
+
+.wrapper.active .formWrapper.signIn {
+  transform: translateY(-450px);
+}
+
+.wrapper .formWrapper.signUp {
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+
+.wrapper.active .formWrapper.signUp {
+  transform: translateY(-450px);
+}
+
+.TituloDarkMode {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.DarkMode {
+  width: 20%;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.Restante {
+  margin-top: -5%;
+}
+
+.inputGroup {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.inputGroup input:focus + label {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+.inputGroup input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: rgb(255, 0, 242);
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  top: -5px;
+}
+
+.remember {
+  margin-bottom: 10px; /* Ajuste conforme necessário para mover para cima */
+}
+
+.remember label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remember label input[type="checkbox"] {
+  display: none;
+}
+
+.remember label .checkbox {
+  position: relative;
+  width: 12\px; /* Largura da caixa */
+  height: 12px; /* Altura da caixa */
+  border: 2px solid #00eeff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox {
+  background-color: #0ef;
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.5), 0 0 20px rgba(132, 0, 255, 0.5),
+    0 0 10px rgba(132, 0, 255, 0.5), 0 0 5px rgba(132, 0, 255, 0.5),
+    0 0 20px rgba(132, 0, 255, 0.5);
+}
+
+.remember label .checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox:after {
+  display: block;
+}
+
+.remember label .checkbox:after {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -1px; /* Ajusta a posição verticalmente */
+  margin-left: -1px; /* Ajusta a posição horizontalmente */
+}
+
+.remember label .label {
+  color: #00eeff;
+  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  color: #fff; /* Branco mais forte */
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  margin-top: 2%;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1.25px #0ef, 0 0 2.5px #0ef, 0 0 5px #0ef, 0 0 10px #0ef,
+    0 0 20px #0ef;
+}
+
+.Opções {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0%;
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.RenomearSenha {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #00eeff;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-family: SF Pro Display;
+  cursor: pointer;
+}
+
+.signUpLink {
+  text-align: center;
+  margin: 5% 0;
+  border-top: solid 1px;
+  border-color: #ffffff;
+}
+
+.signUpLink p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.05em;
+}
+
+.signUpLink p a:hover {
+  text-decoration: underline;
+}
+
+.TesteGratuitamente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.None {
+  text-decoration: none;
+}
+
+.TesteGratuitamente button {
+  background-color: #0d031d;
+  color: #ffffff; /* Branco mais forte */
+  box-shadow: 0 0 10px rgb(132, 0, 255);
+  border-radius: 15px;
+  padding: 3% 20%; /* Ajuste o preenchimento conforme necessário */
+  border: none; /* Remova a borda padrão do botão */
+  cursor: pointer;
+  font-family: SF Pro Display;
+  font-size: 1.2em;
+  transform: translateY(10%);
+}
+
+.TextB {
+  text-decoration: none;
+}
+
+.TesteGratuitamente button:hover {
+  transform: scale(1.05) translateY(10%);
+  box-shadow: 0 0 2.5px rgb(132, 0, 255), 0 0 5px rgb(132, 0, 255),
+    0 0 10px rgb(132, 0, 255), 0 0 20px rgb(132, 0, 255),
+    0 0 40px rgb(132, 0, 255);
+}

@@ -1,0 +1,42 @@
+/* LinkProduto.module.css */
+.linkCliente {
+  color: #0051ff;
+  position: fixed;
+  top: 0;
+  text-decoration: none;
+  margin-left: 21.0%;
+  margin-top: 2.4%;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: SF Pro Display;
+}
+
+.linkCliente:hover {
+  box-shadow: 0 0 0.600px #0066ff, 0 0 1.20px #0066ff, 0 0 2.5px #0066ff, 0 0 5px #0066ff,
+  0 0 10px #0066ff;
+  /* Alinha os itens flexíveis (se o elemento for um contêiner flexível) ao centro no eixo transversal (vertical, se o eixo principal for horizontal) */
+  align-items: center;
+  /* Define um gradiente radial que começa com um tom de azul escuro no centro e se transforma em um tom de azul mais claro em direção às bordas, criando um efeito de brilho radial */
+  background: radial-gradient(50% 50% at 50% 50%, rgb(0, 162, 255) 0%, rgb(50, 64, 223) 100%);
+  color: white;
+  /* Define uma borda sólida com uma largura de 2 pixels */
+  border: 1px solid;
+  border-color: #0ef;
+  /* Arredonda as bordas do elemento com um raio de 10 pixels, criando cantos suaves */
+  border-radius: 15px;
+  /* Define o elemento como um contêiner flexível, permitindo que você use propriedades flexíveis para alinhar e distribuir seus filhos */
+  display: flex;
+  /* Define a altura do elemento para 38 pixels */
+  height: 18px;
+  /* Alinha os itens flexíveis ao centro no eixo principal (horizontal, se o eixo principal for vertical) */
+  justify-content: center;
+  /* Adiciona um preenchimento interno de 14 pixels na parte superior e inferior e 26 pixels nas laterais do elemento */
+  padding: 0.6% 1.1%;
+  
+  /* Define a largura do elemento para 109 pixels */
+  width: 60px;
+  margin-top: 1.8%;
+   /* Adicione outras propriedades existentes aqui */
+ transition: 300ms; /* Adiciona uma transição suave de 300ms */
+ }
+ 

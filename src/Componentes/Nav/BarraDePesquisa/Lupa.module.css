@@ -1,0 +1,53 @@
+/* Lupa.module.css */
+.Lupa {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(1.33, 22.05, 53.12) 0%,
+    rgb(8.26, 44.59, 99.08) 69.5%
+  );
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-color: #e9f8f4;
+  border-radius: 20%;
+  padding: 0.6%;
+  width: 1.4%;
+  margin-left: 59%;
+  margin-top: 1.7%;
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out, padding-left 0.5s ease-in-out;
+}
+
+.Lupa:hover {
+  transform: translateY(0%);
+  padding-left: 14.6%; /* Ajuste o valor conforme necessário */
+  border-radius: 15px;
+  height: 30px;
+  color: #9900ff;
+}
+
+/* Estilos para o campo de entrada */
+.Lupa input[type="text"] {
+  width: 900%; /* Ajuste conforme necessário para centralizar */
+  padding: 10px; /* Espaçamento interno */
+  outline: none; /* Remove o contorno ao focar */
+  border: none; /* Remove a borda */
+  border-radius: 55px; /* Arredonda os cantos */
+  background: linear-gradient(
+    180deg,
+    rgb(1.33, 22.05, 53.12) 0%,
+    rgb(8.26, 44.59, 99.08) 69.5%
+  );
+  font-family: "SF Pro Display", sans-serif;
+  margin-left: -1000%;
+  transform: translateY(-85%);
+  font-size: 1em;
+  color: #00e1ff;
+}
+
+.lupaImage {
+  margin-left: 2%;
+  margin-top: 2%;
+}
