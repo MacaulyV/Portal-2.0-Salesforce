@@ -1,3 +1,9 @@
+.errorMessage {
+  color: rgb(255, 51, 0);
+  font-size: 1.1em;
+  font-family: SF Pro Display;
+}
+
 .CadastroContainer {
   display: flex;
   justify-content: center;
@@ -193,7 +199,7 @@
   position: absolute;
   top: 50%;
   left: 5px;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   font-size: 0.95em;
   color: #fff;
   pointer-events: none;
@@ -208,7 +214,7 @@
 
 .inputGroup input {
   width: 320px;
-  height: 40px;
+  height: 30px;
   font-size: 16px;
   color: rgb(255, 0, 242);
   padding: 0 5px;
